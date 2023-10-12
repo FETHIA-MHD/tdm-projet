@@ -1,0 +1,34 @@
+{
+  "name": "tdm-projet",
+  "version": "1.0.0",
+  "description": "projet mobile 2cs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasmin2309/projet-tdm.git"
+  },
+  "keywords": [
+    "zohor"
+  ],
+  "author": "MAHDI ZHOR YASMINE && LARBAOUI NOUR EL IMENE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasmin2309/projet-tdm/issues"
+  },
+  "homepage": "https://github.com/Yasmin2309/projet-tdm#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "pg": "^8.7.3",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

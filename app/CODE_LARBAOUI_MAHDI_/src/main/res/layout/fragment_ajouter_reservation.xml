@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjouterReservationFragment"
+    android:background="#3CADA4">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="Réserver"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="la  date:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <DatePicker
+        android:id="@+id/dateReservationFormulaire"
+        android:layout_width="192dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FBFBFB"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
+        android:drawablePadding="6dp"
+        android:hint="Date de reservation"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/nomParkingFormulaire" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="89dp"
+        android:gravity="center"
+        android:text="heure d'entree:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TimePicker
+        android:id="@+id/heureEntreeFormulaire"
+        android:layout_width="192dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FBFBFB"
+        android:drawableStart="@drawable/ic_baseline_access_time_24"
+        android:drawablePadding="6dp"
+        android:hint="Heure entree"
+        android:inputType="time"
+        android:timePickerMode="spinner"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/dateReservationFormulaire" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="heure de sortie:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TimePicker
+        android:id="@+id/heureSortieFormulaire"
+        android:layout_width="190dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FBFBFB"
+        android:drawableStart="@drawable/ic_baseline_access_time_24"
+        android:drawablePadding="6dp"
+        android:hint="Heure entree"
+        android:inputType="time"
+        android:timePickerMode="spinner"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/heureEntreeFormulaire" />
+
+    <TextView
+        android:id="@+id/nomParkingFormulaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="center"
+        android:text="Le parking"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonReservation"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00BCD4"
+        android:fontFamily="@font/lato"
+        android:text="Payer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heureSortieFormulaire"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="318dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
